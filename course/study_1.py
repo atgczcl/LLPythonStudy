@@ -137,14 +137,16 @@ async def fibonacci(n):
         # print(a, end='\n')
         my_list.append(a)  # 使用append方法添加元素
         a, b = b, a+b
-    log.info(f"斐波那契数列[[[：{my_list}")
+    log.info(f"斐波那契数列===：{my_list}")
 
 async def main():
     await fibonacci(10)
 log.info(f"斐波那契数列[：{my_list}")
-asyncio.run(main())
+# main() # 无法执行，因为asyncio.run(main())需要放在try语句块中
+# asyncio.run(main())
 c1 = 1 + 2j
 c2 = 3 - 4j
+# c3 = 3 + 4j + 2k # 复数复数之所以不能有两个虚部，是因为其数学定义和代数结构决定了它只能有一个虚部
 log.info(f"c1={c1}, c2={c2}")
 c3 = c1 + c2
 log.info(f"c3={c3}")
