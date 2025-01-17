@@ -5,7 +5,7 @@ import random
 import requests
 
 
-logger.set_log_enable(True, False)
+logger.set_log_enable(True, True)
 # 随机数
 # random.seed(10)
 # 生成一个随机整数
